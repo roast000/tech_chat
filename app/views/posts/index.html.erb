@@ -1,6 +1,15 @@
+<div class="index-all">
+  <div class="index-content">
+    <div class="index-comment">
+      <% @posts.each do |post| %>
+        <div class="comment">0<br>comment</div>
+        <div class="comment-number">
+          タイトル：<%= post.title %><br>
+          内容：<%= post.content %><br>
+          投稿者名：<%= post.name %><br><br>
+        </div>
 
-<% @posts.each do |post| %>
-  タイトル：<%= post.title %><br>
-  内容：<%= post.content %><br>
-  投稿者名：<%= post.name %><br><br>
-<% end %>
+      <% end %>
+    </div>
+  </div>
+</div>
