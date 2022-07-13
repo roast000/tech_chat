@@ -1,0 +1,9 @@
+.header {
+  display: flex;
+  justify-content: space-between
+  aline-items: center;
+}
+
+.post {
+  margin-bottom: 30px;
+}
