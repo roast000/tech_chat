@@ -1,15 +1,36 @@
-<div class="index-all">
-  <div class="index-content">
-    <div class="index-comment">
-      <% @posts.each do |post| %>
-        <div class="comment">0<br>comment</div>
-        <div class="comment-number">
-          タイトル：<%= post.title %><br>
-          内容：<%= post.content %><br>
-          投稿者名：<%= post.name %><br><br>
+<%# 一覧表示画面 %>
+<div class='index-main'>
+  <div class='post-contents'>
+    <% @posts.each do |post| %>
+      <%# 投稿１件分の表示 %>
+      <div class='post-content'>
+        <%# コメントに関する表示 %>
+        <div class='comment'>
+          <div class='comment__num'>
+            0
+          </div>
+          <div class='comment__unit'>
+            comments
+          </div>
         </div>
 
-      <% end %>
-    </div>
+        <%# 質問本文の表示 %>
+        <div class='question'>
+          <div class='question-top'>
+            <div class='question-top__title'>
+              <%= post.title %>
+            </div>
+            <div class='question-top__name'>
+              <%= post.name %>
+            </div>
+          </div>
+          <div class='question-bottom'>
+            <div class='question-bottom__content'>
+              <%= post.content %>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
   </div>
 </div>
