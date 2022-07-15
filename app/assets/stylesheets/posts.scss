@@ -134,55 +134,77 @@ header {
   font-size: 12px;
 }
 
-// form投稿画面
+/********************************************
+  投稿画面
+*********************************************/
+.new-main {
+  height: calc(100vh - 65px);
+  padding: 80px 0;
+  background-color: #F2F2F3;
+}
+
+.form {
+  width: 700px;
+  height: 420px;
+  margin: 0 auto;
+}
+
+.form-top {
+  width: 100%;
+  height: 45px;
+  border-radius: 5px 5px 0 0;
+  background-color: #1C3667;
+}
 
 .form-main {
-  height: calc(100vh - 65px);
-  width: 100vw;
-  background-color: #F2F2F3;
-  display: flex;
-  justify-content: center;
-}
-
-.form-content {
-  width: 700px;
-  height: 391px;
+  width: 100%;
+  height: 350px;
+  padding: 40px 0;
+  border-radius: 0 0 5px 5px;
   background-color: #FFFFFF;
-  margin-top: 80px;
 }
 
-.form-header {
-  height: 45px;
-  width: 700px;
+.input-items {
+  width: 520px;
+  margin: 0 auto;
+}
+
+.input-items input {
+  width: 100%;
+  height: 100%;
+}
+
+.input-items textarea {
+  width: 100%;
+  height: 100%;
+}
+
+.input-items__title {
+  width: 100%;
+  height: 30px;
+}
+
+.input-items__content {
+  width: 100%;
+  height: 120px;
+  margin-top: 15px;
+}
+
+.input-items__name {
+  width: 100%;
+  height: 30px;
+  margin-top: 15px;
+}
+
+.input-items__submit {
+  width: 100%;
+  height: 36px;
+  margin-top: 20px;
+}
+
+.input-items__submit input {
+  border: none;
+  font-size: 18px;
+  color: #FFFFFF;
   background-color: #1C3667;
-  border-radius: 5px 5px 0 0;
 }
-
-.form-contents {
-  width: 700px;
-  height: 346px;
-  display: flex;
-  justify-content: center;
-}
-
-.form-center {
-  display: flex;
-  width: 500px;
- 
-}
-
-// .form-title {
-// width: 520px;
-// }
-
-// .form-text {
-// width: 520px;
-// }
-
-// .form-name {
-// width: 520px;
-// }
-
-// .form-botton {
-// width: 520px;
-// }
